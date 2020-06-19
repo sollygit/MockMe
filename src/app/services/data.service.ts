@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpErrorResponse, HttpParams } from '@angular/common/http';
-import { throwError } from 'rxjs';
-import { retry, catchError, tap } from 'rxjs/operators';
+import { HttpClient, HttpParams } from '@angular/common/http';
+import { retry, tap } from 'rxjs/operators';
 import { Product } from '../models/product';
 import { environment } from 'src/environments/environment';
 
