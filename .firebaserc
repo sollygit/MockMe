@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "mockme-2020": {
+      "hosting": {
+        "MockMe": [
+          "mockme-2020"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Rustic Metal Towels",
+      "description": "Repellat numquam et molestias consequuntur qui ex. Eaque sint recusandae. Dolores consequatur ut sed harum exercitationem.",
+      "price": "89.00",
+      "imageUrl": "https://source.unsplash.com/1600x900/?Rustic Metal Towels",
+      "quantity": 61871
+    },
+    {
+      "id": 2,
+      "name": "Rustic Cotton Chair",
+      "description": "Aut qui assumenda unde non. Qui quia enim beatae voluptas nisi sed vel. Eos repudiandae consequatur aut porro explicabo omnis. Maiores consequatur ut.",
+      "price": "316.00",
+      "imageUrl": "https://source.unsplash.com/1600x900/?Rustic Cotton Chair",
+      "quantity": 67401
+    },
+    {
+      "id": 3,
+      "name": "Ergonomic Fresh Fish",
+      "description": "Et illum nam molestiae quo qui veritatis. Corporis in eligendi harum in ducimus sequi. Nemo saepe voluptatem velit culpa sequi repellendus nostrum. Nisi illo suscipit.",
+      "price": "663.00",
+      "imageUrl": "https://source.unsplash.com/1600x900/?Ergonomic Fresh Fish",
+      "quantity": 69865
+    },
+    {
+      "id": 4,
+      "name": "Handmade Plastic Keyboard",
+      "description": "Natus non autem qui officiis et. Rerum eum amet ea omnis temporibus harum hic. Sed ut hic non natus esse possimus est nihil. Id a doloremque. Quos culpa incidunt qui nulla ut iste.",
+      "price": "500.00",
+      "imageUrl": "https://source.unsplash.com/1600x900/?Handmade Plastic Keyboard",
+      "quantity": 89082
+    },
+    {
+      "id": 5,
+      "name": "Licensed Fresh Pizza",
+      "description": "Atque praesentium nesciunt vitae ut beatae et. Corporis magnam consequatur at repellendus et alias facere. Tempore eos tenetur accusamus distinctio cumque voluptate reprehenderit vero aspernatur.",
+      "price": "498.00",
+      "imageUrl": "https://source.unsplash.com/1600x900/?Licensed Fresh Pizza",
+      "quantity": 10750
+    },
+    {
+      "id": 6,
+      "name": "Licensed Frozen Keyboard",
+      "description": "Omnis sint excepturi est eius aut sint omnis culpa. Distinctio ut in aliquid.",
+      "price": "742.00",
+      "imageUrl": "https://source.unsplash.com/1600x900/?Licensed Frozen Keyboard",
+      "quantity": 55447
+    },
+    {
+      "id": 7,
+      "name": "Practical Soft Fish",
+      "description": "Odit quod assumenda officiis commodi aspernatur placeat. Voluptatem error dolorem qui quae. Officiis doloribus qui ratione repellat tenetur enim unde.",
+      "price": "512.00",
+      "imageUrl": "https://source.unsplash.com/1600x900/?Practical Soft Fish",
+      "quantity": 50049
+    },
+    {
+      "id": 8,
+      "name": "Handcrafted Steel Fish",
+      "description": "Nobis necessitatibus dolor officia ut molestiae quidem incidunt. Provident quibusdam ut eos blanditiis. Placeat consequuntur quibusdam et est qui reiciendis natus. Qui recusandae nam ducimus voluptatum. Placeat consequatur magni ducimus qui. Nobis ab voluptatibus nulla labore ea voluptas quis tempore ut.",
+      "price": "24.00",
+      "imageUrl": "https://source.unsplash.com/1600x900/?Handcrafted Steel Fish",
+      "quantity": 67457
+    },
+    {
+      "id": 9,
+      "name": "Practical Metal Sausages",
+      "description": "Sed voluptatibus reiciendis dolorem. Provident quia iure quos consequatur. Magni numquam rerum doloribus sit non. Eaque saepe voluptas animi.",
+      "price": "292.00",
+      "imageUrl": "https://source.unsplash.com/1600x900/?Practical Metal Sausages",
+      "quantity": 8903
+    },
+    {
+      "id": 10,
+      "name": "Ergonomic Steel Tuna",
+      "description": "Nihil repellat fugit est corrupti assumenda nulla laboriosam exercitationem. Eius eum tenetur omnis aut magnam. Et ipsam qui totam harum odit voluptatum mollitia quis et.",
+      "price": "375.00",
+      "imageUrl": "https://source.unsplash.com/1600x900/?Ergonomic Steel Tuna",
+      "quantity": 79506
+    }
+  ]
+}
