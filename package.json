@@ -11,6 +11,10 @@
     "generate": "node ./server/generate.js > ./server/database.json",
     "server": "json-server --watch ./server/database.json"
   },
+  "deploy": {
+    "builder": "@angular/fire:deploy",
+    "options": {}
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~9.1.11",

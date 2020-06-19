@@ -2,7 +2,7 @@
   "targets": {
     "mockme-2020": {
       "hosting": {
-        "MockMe": [
+        "mockme": [
           "mockme-2020"
         ]
       }

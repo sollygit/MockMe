@@ -1,7 +1,7 @@
 {
   "hosting": [
     {
-      "target": "MockMe",
+      "target": "mockme",
       "public": "dist/mockme",
       "ignore": [
         "firebase.json",
