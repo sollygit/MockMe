@@ -1,13 +1,13 @@
-## Development server
+# MockMe - Development server
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.8.
 
 - ng add @angular/fire
 - ng deploy
 - http://localhost:4200/home?_page=1&_limit=3
 - http://localhost:3000/products?_page=1&_limit=3
 
-# MockMe deployed to Firebase Host
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.8.
+# MockMe - Firebase
 
 - https://mockme-2020.web.app
 - https://mockme-api.azurewebsites.net
