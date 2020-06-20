@@ -1,4 +1,6 @@
-## MockMe - Development server
+## Mock Me App
+
+### Development server:
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.8.
 
@@ -7,7 +9,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - http://localhost:4200/home?_page=1&_limit=3
 - http://localhost:3000/products?_page=1&_limit=3
 
-## MockMe - Firebase
+### Firebase as front-end Azure as back-end: 
 
 - https://mockme-2020.web.app
 - https://mockme-api.azurewebsites.net
