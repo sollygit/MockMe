@@ -14,6 +14,7 @@ import { Product } from '../../../models/product';
 export class HomeComponent implements OnInit, OnDestroy {
 
   products: Product[] = [];
+  hasPaging: boolean;
   destroy$: Subject<boolean> = new Subject<boolean>();
 
   constructor(
@@ -28,6 +29,7 @@ export class HomeComponent implements OnInit, OnDestroy {
         .pipe(takeUntil(this.destroy$))
         .subscribe((response: HttpResponse<Product[]>) => {
           this.products = response.body;
+          this.hasPaging = this.dataService.first !== '';
         });
     });
   }

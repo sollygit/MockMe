@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  restUrl: 'http://localhost:3000'
+  restUrl: 'https://mockme-api.azurewebsites.net'
 };

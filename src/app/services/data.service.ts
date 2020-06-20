@@ -19,7 +19,7 @@ export class DataService {
   constructor(private httpClient: HttpClient) {}
 
   parseLinkHeader(header: string) {
-    if (header.length === 0) {
+    if (!header || header.length === 0) {
       return;
     }
 
