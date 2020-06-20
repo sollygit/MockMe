@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - ng add @angular/fire
 - ng deploy
 - http://localhost:4200/home?_page=1&_limit=3
-- https://mockme-2020.web.app/home?_page=1&_limit=3
+- https://mockme-2020.web.app
 
 ## Development server
 
