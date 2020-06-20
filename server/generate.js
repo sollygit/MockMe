@@ -1,10 +1,10 @@
 var faker = require('faker');
 
-var database = { products: [] };
+var database = { product: [] };
 
 for (var i = 1; i <= 10; i++) {
   const productName = faker.commerce.productName();
-  database.products.push({
+  database.product.push({
     id: i,
     name: productName,
     description: faker.lorem.sentences(),

@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment';
 })
 export class DataService {
 
-  private restUrl = `${environment.restUrl}/products`;
+  private restUrl = `${environment.restUrl}/product`;
 
   public first = '';
   public prev = '';
