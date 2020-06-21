@@ -2,4 +2,19 @@
   <h3>Templates</h3>
   <mat-progress-bar *ngIf="templates.length === 0" mode="indeterminate"></mat-progress-bar>
   <pre *ngIf="templates.length !== 0" class="pre-grey" >{{ templates | json }}</pre>
+
+  <form #myForm="ngForm">
+    <div class="form-group">
+      <textarea id="notification" class="form-control" required [(ngModel)]="notificationRequest.body" 
+        name="notification" #notification="ngModel">
+      </textarea>
+    </div>
+    <div>
+      <button (click)="fetch()" mat-raised-button color="primary">Fetch</button>
+      <button [disabled]="!myForm.form.valid || !enableButton" (click)="send()" mat-raised-button color="primary">Send</button>
+    </div>
+    <div class="progress">
+      <mat-progress-bar *ngIf="loading" mode="indeterminate"></mat-progress-bar>
+    </div>
+  </form>
 </div>

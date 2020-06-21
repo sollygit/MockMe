@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpParams } from '@angular/common/http';
+import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
 import { retry, tap } from 'rxjs/operators';
 import { Product } from '../models/product';
 import { environment } from 'src/environments/environment';
+import { NotificationRequest } from '../models/notification-request.type';
 
 @Injectable({
   providedIn: 'root'
@@ -11,6 +12,7 @@ export class DataService {
 
   private restUrl = `${environment.restUrl}/product`;
   private templatesUrl = `${environment.notificationUrl}/template`;
+  private notificationUrl = `${environment.notificationUrl}/send`;
 
   public first = '';
   public prev = '';
@@ -21,6 +23,15 @@ export class DataService {
 
   public getTemplates() {
     return this.httpClient.get<any[]>(this.templatesUrl);
+  }
+
+  public fetchRequest() {
+    return this.httpClient.get<string>(environment.requestUrl);
+  }
+
+  public sendNotification(request: NotificationRequest) {
+    const header = new HttpHeaders({ 'Content-Type': 'application/json' });
+    return this.httpClient.post<NotificationRequest>(this.notificationUrl, request.body, { headers: header });
   }
 
   public sendGetRequest(page: any, limit: any) {

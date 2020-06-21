@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
+import { FormsModule } from "@angular/forms";
 
 import { AppErrorHandler } from './app-error.handler';
 import { AppRoutingModule } from './app-routing.module';
@@ -29,10 +30,11 @@ import { ConfigurationsComponent } from './components/configurations/configurati
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    FormsModule,
     MaterialModule
   ],
   providers: [
-    { provide: ErrorHandler, useClass: AppErrorHandler },
+    { provide: ErrorHandler, useClass: AppErrorHandler }
   ],
   bootstrap: [AppComponent]
 })
