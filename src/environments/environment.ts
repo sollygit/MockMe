@@ -6,7 +6,7 @@ export const environment = {
   production: false,
   restUrl: 'http://localhost:3000',
   notificationUrl: 'https://notificationservice-api.azurewebsites.net/api/notification',
-  requestUrl: 'http://www.mocky.io/v2/5eda5a1b3300009dfc79eb8d'
+  requestUrl: 'https://www.mocky.io/v2/5eda5a1b3300009dfc79eb8d'
 };
 
 /*
