@@ -1,12 +1,13 @@
-<div class="paging" *ngIf="hasPaging">
-  <button (click)="firstPage()" mat-button> First</button>
-  <button (click)="previousPage()" mat-button> Previous</button>
-  <button (click)="nextPage()" mat-button> Next</button>
-  <button (click)="lastPage()" mat-button> Last</button>
-</div>
-
-<div>
+<div class="component">
+  <h3>Products</h3>
   <mat-spinner *ngIf="products.length === 0"></mat-spinner>
+
+  <div class="paging" *ngIf="hasPaging">
+    <button (click)="firstPage()" mat-button> First</button>
+    <button (click)="previousPage()" mat-button> Previous</button>
+    <button (click)="nextPage()" mat-button> Next</button>
+    <button (click)="lastPage()" mat-button> Last</button>
+  </div>
 
   <mat-card *ngFor="let product of products" class="card">
     <mat-card-header>

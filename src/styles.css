@@ -4,6 +4,15 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-.hidden {
-  display: none;
+.component {
+  padding: 13px;
+}
+
+.pre-grey {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 50%;
+  font-size: 13px;
+  padding: 5px;
 }

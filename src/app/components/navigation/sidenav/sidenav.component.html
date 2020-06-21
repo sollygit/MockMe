@@ -9,7 +9,7 @@
     <mat-icon>menu</mat-icon><span class="nav-caption">Settings</span>
   </a>
   <mat-menu #menu="matMenu">
-    <button mat-menu-item (click)="onSidenavClose()">Profile</button>
-    <button mat-menu-item (click)="onSidenavClose()">Theme</button>
+    <button mat-menu-item routerLink="/templates" (click)="onSidenavClose()">Templates</button>
+    <button mat-menu-item routerLink="/configurations" (click)="onSidenavClose()">Configurations</button>
   </mat-menu>
 </mat-nav-list>

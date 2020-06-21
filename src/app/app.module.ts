@@ -11,14 +11,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material-module';
 import { HeaderComponent } from './components/navigation/header/header.component';
 import { SidenavComponent } from './components/navigation/sidenav/sidenav.component';
+import { TemplatesComponent } from './components/templates/templates.component';
+import { ConfigurationsComponent } from './components/configurations/configurations.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    HeaderComponent,
+    SidenavComponent,
     HomeComponent,
     AboutComponent,
-    HeaderComponent,
-    SidenavComponent
+    TemplatesComponent,
+    ConfigurationsComponent
   ],
   imports: [
     BrowserModule,

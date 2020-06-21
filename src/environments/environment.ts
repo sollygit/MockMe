@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  restUrl: 'http://localhost:3000'
+  restUrl: 'http://localhost:3000',
+  notificationUrl: 'https://notificationservice-api.azurewebsites.net/api/notification'
 };
 
 /*

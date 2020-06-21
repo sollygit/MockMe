@@ -10,13 +10,34 @@ import { environment } from 'src/environments/environment';
 export class DataService {
 
   private restUrl = `${environment.restUrl}/product`;
+  private templatesUrl = `${environment.notificationUrl}/template`;
 
   public first = '';
   public prev = '';
   public next = '';
   public last = '';
 
-  constructor(private httpClient: HttpClient) {}
+  constructor(private httpClient: HttpClient) { }
+
+  public getTemplates() {
+    return this.httpClient.get<any[]>(this.templatesUrl);
+  }
+
+  public sendGetRequest(page: any, limit: any) {
+    return this.httpClient.get<Product[]>(
+      this.restUrl,
+      { params: new HttpParams({ fromString: `_page=${page}&_limit=${limit}` }), observe: 'response' })
+      .pipe(retry(3), tap(response => {
+        this.parseLinkHeader(response.headers.get('Link'));
+      }));
+  }
+
+  public sendGetRequestToUrl(url: string) {
+    return this.httpClient.get<Product[]>(url, { observe: 'response' })
+      .pipe(retry(3), tap(res => {
+        this.parseLinkHeader(res.headers.get('Link'));
+      }));
+  }
 
   parseLinkHeader(header: string) {
     if (!header || header.length === 0) {
@@ -36,22 +57,6 @@ export class DataService {
     this.last = links['last'];
     this.prev = links['prev'];
     this.next = links['next'];
-  }
-
-  public sendGetRequest(page: any, limit: any) {
-    return this.httpClient.get<Product[]>(
-      this.restUrl,
-      { params: new HttpParams({ fromString: `_page=${page}&_limit=${limit}` }), observe: 'response' })
-      .pipe(retry(3), tap(response => {
-        this.parseLinkHeader(response.headers.get('Link'));
-      }));
-  }
-
-  public sendGetRequestToUrl(url: string) {
-    return this.httpClient.get<Product[]>(url, { observe: 'response' })
-      .pipe(retry(3), tap(res => {
-        this.parseLinkHeader(res.headers.get('Link'));
-      }));
   }
 
 }
