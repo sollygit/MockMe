@@ -3,7 +3,6 @@ import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
 import { retry, tap } from 'rxjs/operators';
 import { Product } from '../models/product';
 import { environment } from 'src/environments/environment';
-import { NotificationRequest } from '../models/notification-request.type';
 
 @Injectable({
   providedIn: 'root'
@@ -29,9 +28,9 @@ export class DataService {
     return this.httpClient.get<string>(environment.requestUrl);
   }
 
-  public sendNotification(request: NotificationRequest) {
+  public sendNotification(request: string) {
     const header = new HttpHeaders({ 'Content-Type': 'application/json' });
-    return this.httpClient.post<NotificationRequest>(this.notificationUrl, request.body, { headers: header });
+    return this.httpClient.post<string>(this.notificationUrl, request, { headers: header });
   }
 
   public sendGetRequest(page: any, limit: any) {

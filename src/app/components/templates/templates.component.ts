@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from 'src/app/services/data.service';
-import { NotificationRequest } from 'src/app/models/notification-request.type';
 
 @Component({
   selector: 'app-templates',
@@ -11,8 +10,8 @@ export class TemplatesComponent implements OnInit {
   loading = false;
   enableButton = true;
   templates: any[] = [];
-  
-  public notificationRequest: NotificationRequest = new NotificationRequest({ body: '' });
+
+  public notificationRequest: string;
 
   constructor(private dataService: DataService) { }
 
@@ -32,7 +31,7 @@ export class TemplatesComponent implements OnInit {
   fetch() {
     this.dataService.fetchRequest()
       .subscribe(response => {
-        this.notificationRequest.body = JSON.stringify(response, null, 2);
+        this.notificationRequest = JSON.stringify(response, null, 2);
       });
   }
 

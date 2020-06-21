@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
-import { FormsModule } from "@angular/forms";
+import { FormsModule } from '@angular/forms';
 
 import { AppErrorHandler } from './app-error.handler';
 import { AppRoutingModule } from './app-routing.module';
