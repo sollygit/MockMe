@@ -7,7 +7,6 @@ import { DataService } from 'src/app/services/data.service';
   styleUrls: ['./notifications.component.css']
 })
 export class NotificationsComponent implements OnInit {
-  loading = false;
   enableButton = true;
   templates: any[] = [];
 
@@ -16,20 +15,26 @@ export class NotificationsComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
+    this.getTemplates();
+    this.fetchRequest();
+  }
+
+  getTemplates() {
     this.dataService.getTemplates()
       .subscribe((response: any[]) => {
         this.templates = response;
       });
   }
 
-  fetch() {
+  fetchRequest() {
     this.dataService.fetchRequest()
       .subscribe(response => {
         this.notificationRequest = JSON.stringify(response, null, 2);
       });
   }
 
-  send() {
+  sendNotification() {
+    this.enableButton = false;
     this.dataService.sendNotification(this.notificationRequest)
       .subscribe(() => {
         this.toggleLoading(true);
@@ -38,7 +43,6 @@ export class NotificationsComponent implements OnInit {
 
   toggleLoading(isCompleted: boolean) {
     this.enableButton = isCompleted;
-    this.loading = !isCompleted;
   }
 
 }
