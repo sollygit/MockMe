@@ -20,6 +20,10 @@ export class DataService {
 
   constructor(private httpClient: HttpClient) { }
 
+  public getProducts() {
+    return this.httpClient.get<any[]>('assets/products.json');
+  }
+
   public getTemplates() {
     return this.httpClient.get<any[]>(this.templatesUrl);
   }
