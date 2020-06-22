@@ -25,7 +25,7 @@ export class DataService {
   }
 
   public fetchRequest() {
-    return this.httpClient.get<string>(environment.requestUrl);
+    return this.httpClient.get('assets/notification-request.json');
   }
 
   public sendNotification(request: string) {

@@ -17,7 +17,6 @@ export class NotificationsComponent implements OnInit {
 
   ngOnInit(): void {
     this.dataService.getTemplates()
-      .pipe()
       .subscribe((response: any[]) => {
         this.templates = response;
       });
