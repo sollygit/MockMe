@@ -1,8 +1,8 @@
 <div class="component">
-  <h3>Products</h3>
+  <h3>Mocked Products</h3>
   <mat-spinner *ngIf="products.length === 0"></mat-spinner>
 
-  <div class="paging" *ngIf="hasPaging">
+  <div *ngIf="hasPaging">
     <button (click)="firstPage()" mat-button> First</button>
     <button (click)="previousPage()" mat-button> Previous</button>
     <button (click)="nextPage()" mat-button> Next</button>

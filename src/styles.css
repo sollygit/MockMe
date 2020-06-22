@@ -22,6 +22,15 @@ textarea.form-control.is-required-status {
   padding: 13px;
 }
 
+.img-prod {
+  width: 50%;
+  height: 50%;
+}
+
+.card {
+  margin-top: 10px;
+}
+
 .pre-grey {
   max-height: 200px;
   overflow: auto;
