@@ -14,6 +14,8 @@ import { HeaderComponent } from './components/navigation/header/header.component
 import { SidenavComponent } from './components/navigation/sidenav/sidenav.component';
 import { TemplatesComponent } from './components/templates/templates.component';
 import { ConfigurationsComponent } from './components/configurations/configurations.component';
+import { NotificationsComponent } from './components/notifications/notifications.component';
+import { ProductsComponent } from './components/products/products.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { ConfigurationsComponent } from './components/configurations/configurati
     HomeComponent,
     AboutComponent,
     TemplatesComponent,
-    ConfigurationsComponent
+    ConfigurationsComponent,
+    NotificationsComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,

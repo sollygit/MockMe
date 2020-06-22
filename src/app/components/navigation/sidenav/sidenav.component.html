@@ -5,11 +5,21 @@
   <a mat-list-item routerLink="/about" (click)="onSidenavClose()">
     <mat-icon>info</mat-icon><span class="nav-caption">About</span>
   </a>
+  <a mat-list-item routerLink="/products" (click)="onSidenavClose()">
+    <mat-icon>view_list</mat-icon><span class="nav-caption">Products</span>
+  </a>
+  <a mat-list-item routerLink="/notifications" (click)="onSidenavClose()">
+    <mat-icon>notification_important</mat-icon><span class="nav-caption">Notifications</span>
+  </a>
   <a mat-list-item [matMenuTriggerFor]="menu">
-    <mat-icon>menu</mat-icon><span class="nav-caption">Settings</span>
+    <mat-icon>settings</mat-icon><span class="nav-caption">Settings</span>
   </a>
   <mat-menu #menu="matMenu">
-    <button mat-menu-item routerLink="/templates" (click)="onSidenavClose()">Templates</button>
-    <button mat-menu-item routerLink="/configurations" (click)="onSidenavClose()">Configurations</button>
+    <button mat-menu-item routerLink="/templates" (click)="onSidenavClose()">
+      <mat-icon>menu</mat-icon><span class="nav-caption">Templates</span>
+    </button>
+    <button mat-menu-item routerLink="/configurations" (click)="onSidenavClose()">
+      <mat-icon>menu</mat-icon><span class="nav-caption">Configurations</span>
+    </button>
   </mat-menu>
 </mat-nav-list>
