@@ -4,11 +4,6 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-input.form-control.is-required-status, 
-textarea.form-control.is-required-status {
-  border-left-width: 5px;
-}
-
 .component {
   padding: 13px;
 }
