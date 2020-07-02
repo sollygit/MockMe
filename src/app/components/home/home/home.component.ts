@@ -4,7 +4,7 @@ import { DataService } from '../../../services/data.service';
 import { takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
 import { HttpResponse } from '@angular/common/http';
-import { Product } from '../../../models/product';
+import { Product } from '../../../models/product.type';
 
 @Component({
   selector: 'app-home',

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
 import { retry, tap } from 'rxjs/operators';
-import { Product } from '../models/product';
+import { Product } from '../models/product.type';
 import { environment } from 'src/environments/environment';
 
 @Injectable({

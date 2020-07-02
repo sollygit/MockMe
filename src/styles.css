@@ -9,15 +9,6 @@ textarea.form-control.is-required-status {
   border-left-width: 5px;
 }
 
-.ng-valid[required], 
-.ng-valid.required {
-  border-left: 5px solid #42A948;
-}
-
-.ng-invalid:not(form) {
-  border-left: 5px solid #a94442;
-}
-
 .component {
   padding: 13px;
 }
@@ -39,4 +30,8 @@ textarea.form-control.is-required-status {
   border-radius: 4px;
   font-size: 13px;
   padding: 5px;
+}
+
+.pull-right {
+  float: right;
 }
