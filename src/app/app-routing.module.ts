@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: 'offer', component: OfferComponent },
   { path: 'success', component: SuccessComponent },
   { path: 'notifications', component: NotificationsComponent },
-  { path: "**", component: NotFoundComponent, data: { title: "Page Not Found" } }
+  { path: '**', component: NotFoundComponent }
 ];
 
 @NgModule({
