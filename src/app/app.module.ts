@@ -14,14 +14,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material-module';
 import { HeaderComponent } from './components/navigation/header/header.component';
 import { SidenavComponent } from './components/navigation/sidenav/sidenav.component';
-import { TemplatesComponent } from './components/templates/templates.component';
-import { ConfigurationsComponent } from './components/configurations/configurations.component';
 import { NotificationsComponent } from './components/notifications/notifications.component';
 import { ProductsComponent } from './components/products/products.component';
 import { ConfigurationService } from './services/configuration.service';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SuccessComponent } from './components/success/success.component';
 import { OfferComponent } from './components/offer/offer.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -30,12 +29,11 @@ import { OfferComponent } from './components/offer/offer.component';
     SidenavComponent,
     HomeComponent,
     AboutComponent,
-    TemplatesComponent,
-    ConfigurationsComponent,
     NotificationsComponent,
     ProductsComponent,
     SuccessComponent,
-    OfferComponent
+    OfferComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

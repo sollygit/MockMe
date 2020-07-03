@@ -2,12 +2,11 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home/home.component';
 import { AboutComponent } from './components/about/about.component';
-import { TemplatesComponent } from './components/templates/templates.component';
 import { NotificationsComponent } from './components/notifications/notifications.component';
-import { ConfigurationsComponent } from './components/configurations/configurations.component';
 import { ProductsComponent } from './components/products/products.component';
 import { OfferComponent } from './components/offer/offer.component';
 import { SuccessComponent } from './components/success/success.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -17,8 +16,7 @@ const routes: Routes = [
   { path: 'offer', component: OfferComponent },
   { path: 'success', component: SuccessComponent },
   { path: 'notifications', component: NotificationsComponent },
-  { path: 'templates', component: TemplatesComponent },
-  { path: 'configurations', component: ConfigurationsComponent }
+  { path: "**", component: NotFoundComponent, data: { title: "Page Not Found" } }
 ];
 
 @NgModule({

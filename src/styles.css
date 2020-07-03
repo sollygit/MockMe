@@ -30,3 +30,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .pull-right {
   float: right;
 }
+
+a.mat-button {
+  color: white;
+  margin-left: 10px;
+}
+
+button.mat-focus-indicator {
+  outline: none;
+}
