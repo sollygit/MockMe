@@ -33,7 +33,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 a.mat-button {
   color: white;
-  margin-left: 10px;
+  min-width: 40px;
+  line-height: 30px;
+  margin: 0 10px;
+  padding: 0 0 3px 0;
 }
 
 button.mat-focus-indicator {
