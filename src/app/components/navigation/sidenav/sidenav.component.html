@@ -19,7 +19,7 @@
   </a>
   <mat-menu #menu="matMenu">
     <button mat-menu-item (click)="onSidenavClose()">
-      <a href="http://localhost:3000" target="_blank"><mat-icon>menu</mat-icon><span class="nav-caption">Swagger</span></a>
+      <a href="{{restUrl}}" target="_blank"><mat-icon>menu</mat-icon><span class="nav-caption">Swagger</span></a>
     </button>
     <button mat-menu-item routerLink="/configurations" (click)="onSidenavClose()">
       <mat-icon>menu</mat-icon><span class="nav-caption">Configurations</span>

@@ -7,11 +7,8 @@ import { environment } from 'src/environments/environment';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
   restUrl = `${environment.restUrl}`;
   @Output() public sidenavToggle = new EventEmitter();
-
-  constructor() { }
 
   ngOnInit() {
   }

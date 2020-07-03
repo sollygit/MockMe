@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-sidenav',
@@ -7,8 +8,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class SidenavComponent implements OnInit {
   @Output() sidenavClose = new EventEmitter();
-
-  constructor() { }
+  restUrl = `${environment.restUrl}`;
 
   ngOnInit(): void {
   }
